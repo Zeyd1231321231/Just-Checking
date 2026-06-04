@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Добро пожаловать в наш ресторан!</title>
+        <style>
+            body {
+                background-color:white;
+                color:rgb(10, 10, 10);
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                max-width: 600px;
+                margin: 0 auto;
+                padding: 20px;
+                animation: film 1s ease-out;
+            }
+            #number {
+                color: darkblue;
+            }
+            img {
+                max-width: 100%;
+                height: auto;
+                border-radius: 50px;
+            }
+            @keyframes film {
+                0% {
+                    transform: translateY(-100px);
+                    opacity: 0;
+                }
+                100% {
+                    transform: translateY(0px);
+                    opacity: 1;
+                }
+            }
+            .burger_something {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <p>Быстрое перемещение по сайту:</p>
+            <ul>
+                <li><a href="#faq">Читать частые вопросы</a></li>
+                <li><a href="#menu">Меню</a></li>
+            </ul>
+        </header>
+        <main>
+            <h1 id="menu">Меню:</h1>
+            <p>Примечание: При заказе фаст-фудов картошка фри/нагеттсы будут подаваться как подарок</p>
+            <section>
+                <h2>Бургеры:</h2>
+                <section class="burger_something">
+                    <img src="burger.png" alt="Сочный бургер с курицей">
+                    <div>
+                        <h3>Бургер с курицей</h3>
+                        <h4>Состав: </h4>
+                        <ul>
+                            <li>1 куриная котлета</li>
+                            <li>4-5 долек соленых огурцов</li>
+                            <li>Несколько капель кетчупа и майонеза</li>
+                            <li>2 листа салата</li>
+                            <li>2 сыра Чеддер</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="burger_something">
+                    <img src="burger.png" alt="Сочный бургер с мясом">
+                    <div>
+                        <h3>Бургер с мясом</h3>
+                        <h4>Состав: </h4>
+                        <ul>
+                            <li>1 мясная котлета/бекон(по желанию)</li>
+                            <li>4-5 долек соленых огурцов</li>
+                            <li>Несколько капель кетчупа и майонеза</li>
+                            <li>2 листа салата</li>
+                            <li>2 сыра Чеддер</li>
+                        </ul>
+                    </div>
+                </section>
+            </section>
+            <h2>Приятного аппетита!</h2>
+        </main>
+        <footer>
+            <h3 id="faq">Частые вопросы:</h3>
+            <ul>
+                <li>
+                    <p>Как сделать доставку?</p>
+                    <p>Все просто:</p>
+                    <ol>
+                        <li>Позвоните <a href="tel:+9940708501216" id="number">нам</a></li>
+                        <li>Расскажите что вы хотите и адрес</li>
+                        <li>Подождите какое-то время(зависит от расстояния)</li>
+                        <li>Наслаждайтесь едой!</li>
+                    </ol>
+                </li>
+                <li>
+                    <p>Насколько хорошее качество еды?</p>
+                    <p>Наша еда соответствует всем мировым стандартам. Есть много сертификатов, подтверждающие наше качество. Просто попросите менеджера или главного показать вам их.</p>
+                </li>
+            </ul>
+        </footer>
+    </body>
+</html>
